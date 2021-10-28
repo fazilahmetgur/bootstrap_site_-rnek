@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <style>
+    body{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+.container_1{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(images/background.png);
+    background-size:cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    width: auto;
+  
+    
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="e-mail"],
+select,
+textarea{
+    background: rgb(223, 238, 248);
+    width: 100%;
+    border-radius: 5px;
+    height: 42px;
+  font-size: inherit;
+  font-family: inherit;
+   
+}
+.buttons{
+    margin-top: 20px;
+}
+
+form{
+    border: 2px solid darkblue;
+    background: rgb(201, 199, 199);
+    padding: 40px;
+    width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.form-row{
+    
+    margin-bottom: 20px;
+}
+.form-row label{
+    display: block;
+    margin-bottom: 6px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+   
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container_1">
+        <form action="" method="">
+            <div class="logo">
+                <img src="user-md-solid.svg" alt="">
+            </div>
+            <div class="form-row"> 
+                <label for="adi">Adı</label>
+                <input name="adi" id="adi" type="text" placeholder="Adınız" required>
+            </div>
+    
+            <div class="form-row">
+                <label for="tel">Telefon</label>
+                <input name="tel" id="tel" type="tel" placeholder="Telefon numarası" required>
+            </div>
+    
+            <div class="form-row">
+                <label for="E-mail">E-mail</label>
+                <input name="E-mail" id="E-mail" type="E-mail" placeholder="E-mail adresiniz" required>
+            </div>
+    
+            <div class="form-row">
+                <label for="mesaj">Mesajınız</label>
+               <textarea name="mesaj" id="mesaj"  rows="5"></textarea>
+    
+            </div>
+            <div class="form-row">
+                <label for="şehir">Şehir</label>
+    <select name="şehir" id="şehir">
+    <option value="İstanbul">İstanbul</option>
+    <option value="İzmir" selected>İzmir</option>
+    <option value="Ankara">Ankara</option>
+    <option value="Antalya">Antalya</option>
+    <option value="Mersin">Mersin</option>
+    <option value="Muğla">Muğla</option>
+    </select>
+    </div>
+    
+    <div>
+        <label for="cinsiyet">Cinsiyetiniz</label>
+        <input type="radio" name="cins" checked> Erkek
+        <input type="radio" name="cins">Kadın
+    </div>
+    
+    <div class="buttons">
+        <button type="submit">Gönder</button>
+        <button type="reset">Sıfırla</button>
+    </div>
+    
+    
+    
+    
+    
+    
+        </form>
+    </div>
+
+    </div>
+  
+   
+
+</body>
+</html>
